@@ -23,7 +23,7 @@ const phoneInputR = document.querySelector('#phoneR_input');
 const phoneButtonR = document.querySelector('#phoneR_button');
 const phoneSpanR = document.querySelector('#phoneR_result');
 
-// Пример: +7 912 345-67-89
+
 const reqExpR = /^\+7 \d{3} \d{3}-\d{2}-\d{2}$/;
 
 phoneButtonR.addEventListener('click', () => {
