@@ -1,4 +1,3 @@
-
 /* PHONE CHECKER */
 
 .phone_block {
@@ -51,11 +50,11 @@
 
 .tab_content_block {
     width: 300px;
-    border: 2px solid #ff0080;
+    border: 2px solid #FFA500; /* оранжевый */
     padding: 20px;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 20px #ff0080;
+    box-shadow: 0 0 20px #FFA500;
     color: #fff;
     text-align: left;
     transition: transform 0.3s ease;
@@ -67,7 +66,7 @@
 
 .tab_content_block h4 {
     margin-bottom: 10px;
-    color: #ff0080;
+    color: #FFA500; /* заголовки оранжевые */
 }
 
 .tab_content_block p {
@@ -75,18 +74,17 @@
     line-height: 1.5;
 }
 
-
-
 .tab_content_item {
     padding: 10px 20px;
-    color: #ff0080;
-    border: 1px solid #ff0080;
+    color: #FFA500;
+    border: 1px solid #FFA500;
     font-size: 18px;
     cursor: pointer;
     border-radius: 6px;
     background: transparent;
     transition: all 0.3s ease;
 }
+
 .tab_content_table {
     width: 100%;
     display: flex;
@@ -100,16 +98,41 @@
 }
 
 .tab_content_table td:hover {
-    background: rgba(255, 0, 128, 0.2);
+    background: rgba(255, 165, 0, 0.2); /* оранжевый прозрачный */
 }
 
 .tab_content_item_active {
-    background: #ff0080;
+    background: #FFA500; /* активная вкладка оранжевая */
     color: #111;
     font-weight: 600;
-    box-shadow: 0 0 10px #ff0080;
+    box-shadow: 0 0 10px #FFA500;
 }
 
+/*tab*/
+
+.tab_content_block {
+    display: flex;
+    justify-content: center; /* центрируем картинку */
+    padding: 20px 0; /* отступ сверху и снизу */
+}
+
+.tab_card_image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tab_card_text {
+    text-align: center;
+    color: white; /* или любой цвет текста */
+    font-size: 16px;
+    margin-bottom: 30px; /* дополнительный отступ снизу */
+}
+.tab_slider h3 {
+    margin-bottom: 40px; /* задаём нужный отступ */
+    text-align: center;  /* на всякий случай центрируем */
+    color: white;        /* если нужно */
+}
 
 
 
