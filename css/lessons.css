@@ -50,7 +50,7 @@
 
 .tab_content_block {
     width: 300px;
-    border: 2px solid #FFA500; /* оранжевый */
+    border: 2px solid #FFA500;
     padding: 20px;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.6);
@@ -66,7 +66,7 @@
 
 .tab_content_block h4 {
     margin-bottom: 10px;
-    color: #FFA500; /* заголовки оранжевые */
+    color: #FFA500;
 }
 
 .tab_content_block p {
@@ -98,11 +98,11 @@
 }
 
 .tab_content_table td:hover {
-    background: rgba(255, 165, 0, 0.2); /* оранжевый прозрачный */
+    background: rgba(255, 165, 0, 0.2);
 }
 
 .tab_content_item_active {
-    background: #FFA500; /* активная вкладка оранжевая */
+    background: #FFA500; 
     color: #111;
     font-weight: 600;
     box-shadow: 0 0 10px #FFA500;
@@ -112,8 +112,8 @@
 
 .tab_content_block {
     display: flex;
-    justify-content: center; /* центрируем картинку */
-    padding: 20px 0; /* отступ сверху и снизу */
+    justify-content: center; 
+    padding: 20px 0; 
 }
 
 .tab_card_image {
@@ -124,14 +124,14 @@
 
 .tab_card_text {
     text-align: center;
-    color: white; /* или любой цвет текста */
+    color: white; 
     font-size: 16px;
-    margin-bottom: 30px; /* дополнительный отступ снизу */
+    margin-bottom: 30px; 
 }
 .tab_slider h3 {
-    margin-bottom: 40px; /* задаём нужный отступ */
-    text-align: center;  /* на всякий случай центрируем */
-    color: white;        /* если нужно */
+    margin-bottom: 40px; 
+    text-align: center;  
+    color: white;      
 }
 
 

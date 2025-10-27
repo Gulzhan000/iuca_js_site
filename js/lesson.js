@@ -35,10 +35,10 @@ phoneButtonR.addEventListener('click', () => {
     }
 });
 
-
+//TAB
 const tabsContentCards = document.querySelectorAll('.tab_content_block');
 const tabsItems = document.querySelectorAll('.tab_content_item');
-const tabsItemsParents = document.querySelector('.tab_content_table table'); // исправлено
+const tabsItemsParents = document.querySelector('.tab_content_table table'); 
 
 const hightTabsContentCards = () => {
     tabsContentCards.forEach((tabsContentCard) => {
@@ -71,10 +71,10 @@ tabsItemsParents.onclick = (event) => {
     }
 };
 
-let curretIndex = 0; // Первая вкладка
-let intervalId; // Переменная для хранения интервала
+let curretIndex = 0; 
+let intervalId;
+startAuthoSlider();
 
-// Ф-ция для автоматического переключения
 const startAuthoSlider = () => {
     intervalId = setInterval(() => {
         hightTabsContentCards();
@@ -83,5 +83,4 @@ const startAuthoSlider = () => {
     }, 2000); // 2сек
 };
 
-// Запуск автослайдера
-startAuthoSlider();
+
