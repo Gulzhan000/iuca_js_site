@@ -40,47 +40,46 @@ const tabsContentCards = document.querySelectorAll('.tab_content_block');
 const tabsItems = document.querySelectorAll('.tab_content_item');
 const tabsItemsParents = document.querySelector('.tab_content_table table'); 
 
-const hightTabsContentCards = () => {
-    tabsContentCards.forEach((tabsContentCard) => {
-        tabsContentCard.style.display = 'none';
+let currentIndex = 0; 
+let intervalId;
+
+const hideTabsContentCards = () => {
+    tabsContentCards.forEach((card) => {
+        card.style.display = 'none';
     });
-    tabsItems.forEach((tabItem) => {
-        tabItem.classList.remove('tab_content_item_active');
+    tabsItems.forEach((item) => {
+        item.classList.remove('tab_content_item_active');
     });
 };
 
-const showTabsContentCards = (indexElement = 0) => {
-    tabsContentCards[indexElement].style.display = 'block';
-    tabsItems[indexElement].classList.add('tab_content_item_active');
+const showTabsContentCards = (index = 0) => {
+    tabsContentCards[index].style.display = 'block';
+    tabsItems[index].classList.add('tab_content_item_active');
+};
+const startAutoSlider = () => {
+    intervalId = setInterval(() => {
+        hideTabsContentCards();
+        currentIndex = (currentIndex + 1) % tabsItems.length;
+        showTabsContentCards(currentIndex);
+    }, 2000);
 };
 
-hightTabsContentCards();
-showTabsContentCards();
 
 tabsItemsParents.onclick = (event) => {
     if (event.target.classList.contains('tab_content_item')) {
         clearInterval(intervalId);
         tabsItems.forEach((tabItem, tabItemIndex) => {
             if (event.target === tabItem) {
-                hightTabsContentCards();
+                hideTabsContentCards();
                 showTabsContentCards(tabItemIndex);
-                curretIndex = tabItemIndex;
-                startAuthoSlider();
+                currentIndex = tabItemIndex;
+                startAutoSlider();
             }
         });
     }
 };
-
-let curretIndex = 0; 
-let intervalId;
-startAuthoSlider();
-
-const startAuthoSlider = () => {
-    intervalId = setInterval(() => {
-        hightTabsContentCards();
-        showTabsContentCards(curretIndex);
-        curretIndex = (curretIndex + 1) % tabsItems.length;
-    }, 2000); // 2сек
-};
+hideTabsContentCards();
+showTabsContentCards(currentIndex);
+startAutoSlider();
 
 
