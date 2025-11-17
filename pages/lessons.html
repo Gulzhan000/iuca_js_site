@@ -26,7 +26,7 @@
                         <a href="../pages/lessons.html">Lessons</a>
                     </li>
                     <li class="menu_link">
-                        <a href="" target="_blank">Send hw</a>
+                        <a href="../pages/send_hw.html" target="_blank">Send hw</a>
                     </li>
                 </ul>
                 <button class="btn" id="btn-get">Click me!</button>
@@ -142,30 +142,47 @@
     </div>
 
     <div class="card_switcher">
-        <div class="container">
-            <h3>Card Switcher</h3>
-            <div class="inner_card_switcher">
-                <button class="btn" id="btn-prev">prev</button>
-                <div class="card"></div>
-                <button class="btn" id="btn-next">next</button>
+    <div class="container">
+        <h3>Card Switcher</h3>
+        <div class="inner_card_switcher">
+            <button class="btn" id="btn-prev">prev</button>
+
+            <div class="card">
+                <img class="card-image" src="images/img1.jpg" alt="Card 1" />
+                <img class="card-image" src="images/img2.jpg" alt="Card 2" />
+                <img class="card-image" src="images/img3.jpg" alt="Card 3" />
+                <img class="card-image" src="images/img4.jpg" alt="Card 4" />
             </div>
+
+            <button class="btn" id="btn-next">next</button>
         </div>
     </div>
+</div>
+
 
     <div class="weather">
-        <div class="container">
-            <div class="inner_weather">
-                <div>
-                    <input type="text" class="cityName" placeholder="Найти погоду в...">
-                </div>
-                <div>
-                    <span class="city"></span>
-                    <hr>
-                    <span class="temp"></span>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="inner_weather">
+
+     
+      <div class="weather-inputs">
+        <input type="text" class="cityName" placeholder="Найти погоду в...">
+        <button class="searchBtn">Найти</button>
+      </div>
+
+      
+      <div class="weather-result">
+        <span class="city"></span>
+        <hr>
+        <span class="temp"></span>
+      </div>
+
     </div>
+  </div>
+</div>
+
+
+
 
     <div class="footer">
         <div class="container">

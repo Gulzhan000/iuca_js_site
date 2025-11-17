@@ -2,7 +2,7 @@
 
 .header {
     height: 80px;
-    background: #2c2d2f;
+    background: #32074b;
     display: flex;
     align-items: center;
     width: 100%;
@@ -21,6 +21,7 @@
 /* LOGOTYPE */
 
 .logotype {
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +56,7 @@
 
 .main_block {
     padding: 100px 0;
-    background: black;
+    background: radial-gradient(circle, #3e2385, #7041bb);
 }
 
 /* BUTTONS COLOR PICKER */
@@ -74,7 +75,7 @@
 /* FOOTER */
 
 .footer {
-    background: #2c2d2f;
+    background: #32074b;
     width: 100%;
 }
 
@@ -96,7 +97,7 @@
 
 .slider_block {
     padding: 100px 0;
-    background: black;
+    background: radial-gradient(circle, #3e2385, #7041bb);
 }
 
 .slider {
@@ -153,7 +154,7 @@
 /* VIDEO BLOCK */
 
 .block_video {
-    background: black;
+    background: radial-gradient(circle, #3e2385, #7041bb);
     padding: 100px 0;
 }
 
@@ -172,7 +173,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgb(59, 35, 101);
     display: none;
 }
 
@@ -185,7 +186,7 @@
     position: relative;
     width: 100%;
     padding: 40px;
-    background-color: black;
+    background-color: rgb(229, 226, 226);
     border: 2px solid var(--orange);
     border-radius: 4px;
     max-height: 80vh;
@@ -227,7 +228,7 @@
 /*-------BOTTLE-------*/
 
 .botlle {
-    background: black;
+    background: radial-gradient(circle, #3e2385, #7041bb);
     padding: 100px 0;
 }
 
@@ -241,7 +242,7 @@
     position: relative;
     width: 300px;
     height: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: radial-gradient(circle, #3e2385, #7041bb);
     border-radius: 50%;
     border: 8px solid transparent;
     animation: animate 5s linear infinite;
@@ -289,7 +290,7 @@
     transform: translate(-50%, -50%);
     width: 150px;
     height: 60px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgb(59, 35, 101);
     transform-origin: center;
     animation: animatebowlshadow 5s linear infinite;
     border-radius: 50%;

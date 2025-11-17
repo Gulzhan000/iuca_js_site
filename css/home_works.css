@@ -2,7 +2,7 @@
 /* GMAIL BLOCK */
 
 .gmail_block {
-    background: black;
+    background: radial-gradient(circle, #3e2385, #7041bb);
     padding: 100px 0;
 }
 
@@ -30,7 +30,7 @@
 /* MOVE BLOCK */
 
 .move_block {
-    background: black;
+    background: radial-gradient(circle, #3e2385, #7041bb);
     padding: 100px 0;
 }
 
@@ -54,7 +54,7 @@
     top: 0;
     width: 50px;
     height: 50px;
-    background-color: red;
+    background-color: rgb(22, 173, 143);
 }
 
 
@@ -184,7 +184,7 @@
 
 .stopwatch {
     padding: 100px 0;
-    background: black;
+    background: radial-gradient(circle, #3e2385, #7041bb);
 }
 
 .time_buttons {
