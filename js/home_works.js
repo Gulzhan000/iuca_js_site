@@ -88,18 +88,16 @@ let running = false;
 function updateTimer() {
     milliseconds++;
     
-    // Рассчитываем минуты, секунды и миллисекунды
-    const minutes = Math.floor(milliseconds / 6000); // 6000 = 60 сек * 100 десятых долей
+   
+    const minutes = Math.floor(milliseconds / 6000); 
     const seconds = Math.floor((milliseconds % 6000) / 100);
     const tenths = milliseconds % 100;
     
-    // Обновляем все элементы
     document.getElementById('minutesS').innerText = minutes.toString().padStart(2, '0');
     document.getElementById('secondsS').innerText = seconds.toString().padStart(2, '0');
     document.getElementById('ml-secondsS').innerText = tenths.toString().padStart(2, '0');
 }
 
-// Функция сброса таймера
 function resetTimer() {
     milliseconds = 0;
     document.getElementById('minutesS').innerText = '00';
@@ -112,7 +110,6 @@ function resetTimer() {
     }
 }
 
-// Обработчики событий
 document.getElementById('start').addEventListener('click', function() {
     if (!running) {
         intervalId = setInterval(updateTimer, 10); // 10ms = 0.01 секунды
